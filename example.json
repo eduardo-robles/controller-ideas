@@ -1,0 +1,11 @@
+[
+{
+	bidNum: '1',
+	closeDate: '2',
+	closeTime: '3',
+	file: '4',
+	addendum: [{bidNum:'', addId:'', closeDate:'', file:''}]
+	tabulation:[{bidNum:'', addId:'', closeDate:'', file:''}]
+
+}
+]

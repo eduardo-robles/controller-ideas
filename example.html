@@ -1,0 +1,31 @@
+<body ng-controller="BidsController as bid">
+    <!--  bids Container  -->
+    <div class="list-group">
+      <!--  bids Container  -->
+      <div ng-repeat="bid in bids.bidTable">
+        <h3>
+          {{bid.name}}
+          <em>{{bid.bidNum}}</em>
+        </h3>
+
+        <!-- This part below is key "bid.addendum.lenght"  -->
+        <!--Show if there are any addendums-->
+        <div ng-show="bid.addendum.length">
+          <a ng-src="{{bid.file[0]}}" />
+          <ul>
+            <li ng-repeat="addendum in bids.bidTable">
+		             <a ng-src="{{addendum}}" /> </li>
+          </ul>
+        </div>
+        <!--Show if there are any tabulations-->
+        <div ng-show="bid.tabulations.length">
+          <a ng-src="{{bid.file[0]}}" />
+          <ul>
+            <li ng-repeat="tabulations in bids.bidTable">
+		              <a ng-src="{{addendum}}" /> </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </body>
